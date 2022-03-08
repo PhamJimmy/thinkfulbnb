@@ -1,0 +1,236 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100%;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 0 20px 0 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+  margin: 0 20px 20px 20px;
+}
+
+form fieldset {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+form fieldset div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------About ------- */
+
+#about {
+  padding: 30px;
+}
+
+#about img {
+  padding: 10px 0 10px 0;
+}
+
+/* -------  Ideas ------- */
+
+#ideas {
+  margin: 10px;
+}
+
+#ideas h3 {
+  padding-top: 20px;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+  header {
+    flex-direction: row;
+  }
+
+  form fieldset {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  form fieldset div {
+    flex-direction: column;
+  }
+
+  form select,
+  form input {
+    margin-bottom: 0;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-blurb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #about img {
+    width: 20%;
+    padding-right: 10px;
+    flex: 1;
+  }
+
+  #about p {
+    flex: 2;
+  }
+
+  #ideas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  #ideas h2 {
+    flex: 100%;
+  }
+
+  .idea {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+    padding: 10px;
+  }
+
+  #host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #host img {
+    width: 49%;
+  }
+}
